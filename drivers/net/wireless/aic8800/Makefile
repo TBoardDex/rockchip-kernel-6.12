@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0
+# MMC and mmc-pwrseq-simple own power sequencing; use in-band SDIO IRQs.
+# Keep legacy vendor prototype warnings local to these drivers.
+subdir-ccflags-y += -Wno-error=missing-prototypes
+obj-$(CONFIG_AIC_WLAN_SUPPORT) += aic8800_bsp/ aic8800_fdrv/
